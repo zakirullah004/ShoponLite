@@ -1,4 +1,4 @@
-import logo from '../assests/images/shopon.pk-1741372708474/Shopon_Logo_F-03__1__3n3z-fn.png'
+import logo from '../images/shopon.pk-1741372708474/Shopon_Logo_F-03__1__3n3z-fn.png'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,9 +7,9 @@ import Navbar from 'react-bootstrap/Navbar';
 
 export default function MyNavbar(){
         return (
-        <Container>
+        
           <Navbar expand="lg" className="bg-body-tertiary">
-            <Container fluid>
+            <Container >
               <Navbar.Brand href="#"><img src={logo} width={100} height={40} /></Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id="navbarScroll">
@@ -35,6 +35,5 @@ export default function MyNavbar(){
               </Navbar.Collapse>
             </Container>
           </Navbar>
-          </Container>
         );
       }
