@@ -11,14 +11,22 @@ export default function MyCategories({ data }) {
         data.map((value, index) => {
             return(
                 <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center",flexWrap:"wrap"}}>
-                    <img src={value.imglink} width={80}  className="rounded shadow-none"  />
+                    <img id="cateImg" src={value.imglink} width={80}  className="rounded shadow-none"  />
                     <li key={index}>{value.title}</li>
                 </div>
             )
         })
         }
       </ul>
+      <style>
+              {`
+               #cateImg:hover{
+              cursor: pointer;
+              }          
+            `}
+            </style>
       </Container>
     </>
+    
   );
 }
