@@ -50,7 +50,27 @@ import a33 from './images/shopon.pk-1741372708474/samsung-galaxy-a33-pakistan-pr
 import a04 from './images/shopon.pk-1741372708474/Samsung-Galaxy-A13-Awesom-Blue-7.png'
 import zFlip from './images/shopon.pk-1741372708474/samsung-galaxy-z-flip-4-pakistan-priceoye-phrl2.jpg'
 
+import elecImgTitle from './images/shopon.pk-1741372708474/electronics-collection.jpg'
 
+//! importing Electonic images
+
+import tv1 from './images/shopon.pk-1741372708474/15492060143e6a5a507dc420622ffc6e9b00a69c9d.jpg'
+import tv2 from './images/shopon.pk-1741372708474/ezgif.com-gif-maker-8.jpg'
+import tv3 from './images/shopon.pk-1741372708474/43X755.jpg'
+import tv4 from './images/shopon.pk-1741372708474/sss.jpg'
+import tv5 from './images/shopon.pk-1741372708474/32.jpg'
+import tv6 from './images/shopon.pk-1741372708474/40R352.jpg'
+import sink from './images/shopon.pk-1741372708474/61se8BZarSL.jpg'
+import candy from './images/shopon.pk-1741372708474/candy.jpg'
+import dis from './images/shopon.pk-1741372708474/gallery2.jpg'
+import wash from './images/shopon.pk-1741372708474/download_qdz4-yj.jpg'
+import griz from './images/shopon.pk-1741372708474/download_n2v2-91.jpg'
+import gas from './images/shopon.pk-1741372708474/download_4xnf-js.jpg'
+import wpoint from './images/shopon.pk-1741372708474/westpoint_insect_killer_wf-7108_15000_2_6.jpg'
+import oven from './images/shopon.pk-1741372708474/10.jpg'
+import ac from './images/shopon.pk-1741372708474/mega_t_30.png'
+import stabli from './images/shopon.pk-1741372708474/a-16d-universal__16549_zoom.jpg'
+import Fridge from './images/shopon.pk-1741372708474/download_tkg8-ck.jpg'
 
 
 function App() {
@@ -191,6 +211,88 @@ function App() {
     }
   ]
 
+  const electronicItems = [
+    {
+      name : "Ecostar TV",
+      price:74000,
+      img:tv1
+    },
+    {
+      name : "Samsung UHD TV",
+      price:152999,
+      img:tv2
+    },
+    {
+      name : "Sony LED TV",
+      price:161405,
+      img:tv3
+    },
+    {
+      name : "Full HD TV",
+      price:139460,
+      img:tv4
+    },
+    {
+      name : "Sony HD TV",
+      price:49685,
+      img:tv5
+    },
+    {
+      name : "Sony FHD TV",
+      price:77615,
+      img:tv6
+    },
+    {
+      name:"Electronic Sink",
+      price:4490,
+      img:sink
+    },
+    {
+      name:"Prtable Cotton Candy",
+      price:8990,
+      img:candy
+    },
+    {
+      name:"MIDAS Dispanser ",
+      price:44490,
+      img:dis
+    },
+    {
+      name:"Washing Machine",
+      price:114155,
+      img:wash
+    },
+    {
+      name:"Gas Geyser ",
+      price:50240,
+      img:griz
+    },
+    {
+      name:"Dawlance HOB",
+      price:65500,
+      img:gas
+    },
+    {
+      name:"West Point Insect Killer",
+      price:17999,
+      img:wpoint
+    },
+    {
+      name:"Dawlance AC",
+      price:160000,
+      img:ac
+    },
+    {
+      name:"Universal Stabilizer",
+      price:12999,
+      img:stabli
+    },
+    {
+      name:"Dawlance Refrigerator",
+      price:96200,
+      img:Fridge
+    }
+  ]
 
 
 
@@ -201,8 +303,17 @@ function App() {
       <MyCategories data={categories} />
       <SalesCard data={saleProducts} />
       <MyGiftCard data={cardsGift} />
+
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"50px"}}>MOBILE & ACCESSORIES</h3>
       <Accessories data={iphoneMobiles} />
       <Accessories data={samsungMobiles} />
+
+      <div  className='mx-auto text-center'>
+      <img src={elecImgTitle} alt="" />
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>ELECTRONICS</h3>
+      </div>
+
+      <Accessories data={electronicItems} disableScroll={true} />
     </>
   )
 }
