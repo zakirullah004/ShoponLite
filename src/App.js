@@ -51,6 +51,7 @@ import a04 from './images/shopon.pk-1741372708474/Samsung-Galaxy-A13-Awesom-Blue
 import zFlip from './images/shopon.pk-1741372708474/samsung-galaxy-z-flip-4-pakistan-priceoye-phrl2.jpg'
 
 import elecImgTitle from './images/shopon.pk-1741372708474/electronics-collection.jpg'
+import des from './images/shopon.pk-1741372708474/summer-new-arrials.jpg'
 
 //! importing Electonic images
 
@@ -71,6 +72,13 @@ import oven from './images/shopon.pk-1741372708474/10.jpg'
 import ac from './images/shopon.pk-1741372708474/mega_t_30.png'
 import stabli from './images/shopon.pk-1741372708474/a-16d-universal__16549_zoom.jpg'
 import Fridge from './images/shopon.pk-1741372708474/download_tkg8-ck.jpg'
+
+//! --------------------------------
+
+import men from './images/shopon.pk-1741372708474/MEN.jpg'
+import women from './images/shopon.pk-1741372708474/women.jpg'
+import kids from './images/shopon.pk-1741372708474/kids.jpg'
+import shoes from './images/shopon.pk-1741372708474/dd.jpg'
 
 
 function App() {
@@ -136,6 +144,14 @@ function App() {
     { id: 2, img: googleCard },
     { id: 3, img: iTuneCard },
     { id: 4, img: AmaCard },
+  ]
+
+  
+  const fashionCards = [
+    { id: 1, img: men },
+    { id: 2, img: women },
+    { id: 3, img: kids },
+    { id: 4, img: shoes },
   ]
 
   const iphoneMobiles = [
@@ -278,6 +294,11 @@ function App() {
       img:wpoint
     },
     {
+      name:"Microwave Oven",
+      price:42999,
+      img:oven
+    },
+    {
       name:"Dawlance AC",
       price:160000,
       img:ac
@@ -312,8 +333,15 @@ function App() {
       <img src={elecImgTitle} alt="" />
       <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>ELECTRONICS</h3>
       </div>
-
       <Accessories data={electronicItems} disableScroll={true} />
+
+      <div className='mx-auto text-center'>
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>FASHION</h3>
+      <img src={des} alt="" />
+      </div>
+
+      <MyGiftCard data={fashionCards} />
+
     </>
   )
 }

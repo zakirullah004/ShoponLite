@@ -84,7 +84,6 @@ export default function AccessoriesCard({ data, disableScroll = false }) {
             height: 200px;
             object-fit: cover;
             border-radius: 8px;
-            border:1px solid  rgba(0,0,0,0.1);
           }
           .stars {
             color: #ccc;

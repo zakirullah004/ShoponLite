@@ -11,7 +11,7 @@ export default function MyGiftCard({data}){
                 data.map((val,ind)=>{
                         return(
                             <Col key={ind}>
-                            <img style={{borderRadius:"30px",marginTop:"10px"}} src={val.img} alt={`img ${val.id}`} />
+                            <img style={{borderRadius:"30px",marginTop:"10px",width:"280px"}} src={val.img} alt={`img ${val.id}`} />
                             </Col>
                         )
                 })
