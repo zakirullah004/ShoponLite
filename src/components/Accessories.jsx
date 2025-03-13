@@ -57,6 +57,7 @@ export default function AccessoriesCard({ data, disableScroll = false }) {
           }
           .accessories-wrapper {
             display: flex;
+            justify-content:center;
             gap: 1rem;
             overflow-x: auto;
             padding: 10px;

@@ -80,6 +80,43 @@ import women from './images/shopon.pk-1741372708474/women.jpg'
 import kids from './images/shopon.pk-1741372708474/kids.jpg'
 import shoes from './images/shopon.pk-1741372708474/dd.jpg'
 
+//! -------------------------------
+
+import game1 from './images/shopon.pk-1741372708474/con1.jpg'
+import game2 from './images/shopon.pk-1741372708474/t49.jpg'
+import game3 from './images/shopon.pk-1741372708474/WhatsApp_Image_2021-10-16_at_3.04.04_PM.jpeg'
+import game4 from './images/shopon.pk-1741372708474/WhatsApp_Image_2021-10-16_at_2.34.27_PM__1__68gq-rz.jpeg'
+import game5 from './images/shopon.pk-1741372708474/WhatsApp_Image_2021-10-16_at_3.04.06_PM.jpeg'
+import game6 from './images/shopon.pk-1741372708474/1__36_-1000x1000.jpg'
+
+//! --------------------------------
+
+import lap1 from './images/shopon.pk-1741372708474/4zu3_Dell_Vostro_15_3558__19542_zoom.jpg'
+import lap2 from './images/shopon.pk-1741372708474/4zu3_HP_Probook_645_G4.jpg'
+import lap3 from './images/shopon.pk-1741372708474/62edce24d0278fd051847a20033990ef.jpg'
+import lap4 from './images/shopon.pk-1741372708474/419724579-800x600.jpeg'
+import lap5 from './images/shopon.pk-1741372708474/5590-3.jpg'
+import lap6 from './images/shopon.pk-1741372708474/copy-1--1540-14392-170223102308-17888-0-280823093555621.jpg'
+import lap7 from './images/shopon.pk-1741372708474/Dell-Latitude-7280.jpg'
+import lap8 from './images/shopon.pk-1741372708474/Dell-Latitude-7480-1.jpg'
+import lap9 from './images/shopon.pk-1741372708474/dsa-300x300.jpg'
+import lap10 from './images/shopon.pk-1741372708474/E5470-1.jpg'
+import lap11 from './images/shopon.pk-1741372708474/images.jpg'
+import lap12 from './images/shopon.pk-1741372708474/P8agK8Aifu.jpg'
+
+
+// ! ------------------------------------
+import setDecor from './images/shopon.pk-1741372708474/decore-roome.jpg'
+
+import dec1 from './images/shopon.pk-1741372708474/791d1b218a7031a53b50e71e5d5a0739.jpg'
+import dec2 from './images/shopon.pk-1741372708474/c5f9a761931a392cb5bb51948825400e.jpg'
+import dec3 from './images/shopon.pk-1741372708474/ca08bcf7394bd53d4b079902f5062b73.jpg'
+import dec4 from './images/shopon.pk-1741372708474/e896078edc1035491da7b1b93302cf8b.jpg'
+import dec5 from './images/shopon.pk-1741372708474/fd26b7957f67b1638286ae62fa990288.jpg'
+import dec6 from './images/shopon.pk-1741372708474/28e5978720e5f09d6cb603e48d02a101.jpg'
+import dec7 from './images/shopon.pk-1741372708474/Revolving-8-Pcs-Spice-Rack-Tower-Kitchen-Masala-Jar-rs-1500-_1_360x.jpg'
+import dec8 from './images/shopon.pk-1741372708474/1-_176_360x.jpg'
+import dec9 from './images/shopon.pk-1741372708474/dde953cc-29cd-47ce-84df-bf02d9aa6766_1_360x.jpg'
 
 function App() {
 
@@ -315,7 +352,163 @@ function App() {
     }
   ]
 
+  const popularGames = [
+    {
+      id : 1,
+      img : game1
+    },
+    {
+      id : 1,
+      img : game2
+    },
+    {
+      id : 1,
+      img : game3
+    },
+    {
+      id : 1,
+      img : game4
+    },
+    {
+      id : 1,
+      img : game5
+    },
+    {
+      id : 1,
+      img : game6
+    }
+  ]
 
+  let laptops1 = [
+    {
+      id:1,
+      img : lap1,
+      name:"DELL 5590 core i5",
+      price : 75000
+    },
+    {
+      id:2,
+      img : lap2,
+      name:"DELL 5580 core i5 7th",
+      price : 75000
+    },
+    {
+      id:3,
+      img : lap3,
+      name:"HP 645 G4 ryzen",
+      price : 90000
+    },
+    {
+      id:4,
+      img : lap4,
+      name:"HP 840 cire i5 8th",
+      price : 125000
+    },
+    {
+      id:5,
+      img : lap5,
+      name:"DELL 5590 core i5",
+      price :5000
+    },
+    {
+      id:6,
+      img : lap6,
+      name:"VAIO 5590 core i7",
+      price :13000
+    }
+  ]
+
+  let laptops2 = [
+    {
+      id:7,
+      img : lap7,
+      name:"DELL 7390 core i5",
+      price : 59990
+    },
+    {
+      id:8,
+      img : lap8,
+      name:"HP core i5 7th",
+    },
+    {
+      id:9,
+      img : lap9,
+      name:"HP 645 G4 ryzen",
+    },
+    {
+      id:10,
+      img : lap10,
+      name:"DELL 840 cire i5 8th",
+      price : 115000
+    },
+    {
+      id:11,
+      img : lap11,
+      name:"DELL 5590 core i5",
+      price :29990
+    },
+    {
+      id:12,
+      img : lap12,
+      name:"VAIO 5590 core i7",
+    }
+  ]
+
+  let decor = [
+    {
+      id : 1,
+      img : dec1,
+      name : "tijarat Artifical Grass",
+      price:3999
+    },
+    {
+      id : 2,
+      img : dec2,
+      name : "Artifical Plants set of 4",
+      price:999
+    },{
+      id : 3,
+      img : dec3,
+      name : "Artificial Flowers",
+      price:1399
+    },
+    {
+      id : 4,
+      img : dec4,
+      name : "Wooden Wall Clock",
+    },
+    {
+      id : 5,
+      img : dec5,
+      name : "wall Clock",
+      price:1999
+    },
+    {
+      id : 6,
+      img : dec6,
+      name : "The Ride wall Clock",
+      price:1999
+    },
+    {
+      id : 7,
+      img : dec7,
+      name : "Kitchen Masala Jar",
+      price:2999
+    },
+    {
+      id : 8,
+      img : dec8,
+      name : "Hanging Basket",
+      price:2899
+    },
+    {
+      id : 9,
+      img : dec9,
+      name : "Glass Spice Jar(3)",
+      price:3399
+    },
+    
+  ]
 
   return (
     <>
@@ -341,6 +534,20 @@ function App() {
       </div>
 
       <MyGiftCard data={fashionCards} />
+
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>POPULAR VIDEO GAMES</h3>
+      <Accessories data={popularGames} />
+
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>Laptops</h3>
+      <Accessories data={laptops1} />
+      <Accessories data={laptops2} />
+
+
+      <div  className='mx-auto text-center'>
+      <img src={setDecor} alt="" />
+      <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>HOME AND DECOR</h3>
+      </div>
+      <Accessories data={decor} disableScroll={true} />
 
     </>
   )
