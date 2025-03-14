@@ -5,6 +5,7 @@ import MyCategories from './components/categoriesCards';
 import SalesCard from './components/salesCard';
 import MyGiftCard from './components/giftcards';
 import Accessories from './components/Accessories';
+import MyFooter from './components/footer';
 
 //! importing images 
 import giftCard from './images/shopon.pk-1741372708474/gift-card.png';
@@ -510,6 +511,12 @@ function App() {
     
   ]
 
+  const usefulLinksData = ["About us", "Gift certificates", "Our brands", "Sitemap", "Blog"];
+  const myAccount = ["Sign in", "Create Accout"];
+  const customer = ["Payment & Shipping", "Privacy Policy","Terms and Conditions","FAQ's","Returns & Exchange","About your Order","Wishlist","Comparision List"];
+  const contact = [", 15E Officers Colony Bosan Road Multan", "03336198169","Mon-Sun 09:00 AM to 11:30 PM","admin@shopon.pk","View on map"];
+  const keppinTouch = ["Facebook","Instagram","Twitter","Youtube"];
+
   return (
     <>
       <MyNavbar />
@@ -548,6 +555,8 @@ function App() {
       <h3 className='text-center' style={{color:"#363636",fontSize:"24px",fontWeight:"bold",marginTop:"10px"}}>HOME AND DECOR</h3>
       </div>
       <Accessories data={decor} disableScroll={true} />
+
+      <MyFooter keepin={keppinTouch} customer={customer} contact={contact} myAccout={myAccount} usefulLinks={usefulLinksData} />
 
     </>
   )
